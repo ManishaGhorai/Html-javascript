@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/formjava.css">
+    <title>Form validation</title>
+</head>
+<body>
+    <div class="container">
+    <h2>Registration Form</h2>
+    <form action="/submit.html
+    " method="POST" autocomplete="off" onsubmit="return validateMyForm();">
+        <div>
+        <label for="full name">Full Name*:<br></label>
+       <input type="text" name="fname" id="fname" placeholder="Enter Your Name">
+    </div>
+    <p class="error" id="errFname"></p>
+       <div>
+       <label for="mail">Email*:<br></label>
+       <input type="text" name="mail" id="mail" placeholder="Enter your Email">
+    </div>
+    <p class="error" id="errMail"></p>
+       <div>
+       <label for="contact">Contact No*:<br></label>
+       <input type="text" name="phno" id="phno" placeholder="Enter Your phone number">
+    </div>
+    <p class="error" id="errPhno"></p>
+       <div>
+       <label for="pass">Password*:<br></label>
+       <input type="text" name="pass" id="pass" placeholder="Enter Password">
+    </div>
+    <p class="error" id="errPass"></p>
+       <div>
+       <label for="conpass">Confirm Password*:<br></label>
+       <input type="text" class="cpass" id="cpass" placeholder="Confirm Password">
+    </div>
+    <p class="error" id="errCpass"></p>
+       <div>
+         <br>
+       <input type="submit" value="Sign Up">
+    </div>
+    </form>
+    </div>
+
+
+
+    <script src="js/form java.js"></script>
+
+    
+</body>
+</html>
